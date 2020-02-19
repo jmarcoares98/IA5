@@ -9,6 +9,7 @@ const AppMode = {
     LOGIN: "LoginMode",
     DISPLAY: "DisplayMode",
     DISPLAY_ADDDATA: "DisplayMode-AddData",
+    DISPLAY_EDITDATA: "DisplayMode-EditData",
     CONSTRUCTION: "ConstructionMode",
 };
 
