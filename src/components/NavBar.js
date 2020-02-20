@@ -1,5 +1,6 @@
 import React from 'react';
-import AppMode from '../AppMode.js';
+import AppMode from './../AppMode.js';
+import Delta from './../delta.png'
 
 class NavBar extends React.Component {
 
@@ -7,7 +8,7 @@ class NavBar extends React.Component {
       if (this.props.mode === AppMode.DISPLAY_ADDDATA ||
           this.props.mode === AppMode.DISPLAY_EDITDATA) {
         this.props.changeMode(AppMode.DISPLAY);
-      } else if (this.props.mode != AppMode.LOGIN) {
+      } else if (this.props.mode !== AppMode.LOGIN) {
         this.props.toggleMenuOpen();
       }
     }
@@ -30,7 +31,7 @@ class NavBar extends React.Component {
               className={"sidemenu-btn-icon " + this.getMenuBtnIcon()}>
             </span>
           </button>
-          <img src="./public/delta.png" alt="Speed Score Logo" height="38px"
+          <img src={Delta} alt="Delta Logo" height="38px"
           width="38px" />
           <span id="topBarTitle" className="navbar-title">
             &nbsp;{this.props.title}

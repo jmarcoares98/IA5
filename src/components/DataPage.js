@@ -1,10 +1,10 @@
 import React from 'react';
 import DataAdd from './DataAdd.js';
 import FloatingButton from './FloatingButton.js';
-import AppMode from '../AppMode.js';
+import AppMode from './../AppMode.js';
 import DataDisplay from './DataDisplay.js';
 
-class Data extends React.Component {
+class DataPage extends React.Component {
 
     //Initialize objects based on local storage
     constructor(props) {
@@ -98,4 +98,4 @@ class Data extends React.Component {
     }
 }    
 
-    export default Data;
+    export default DataPage;
