@@ -20,7 +20,7 @@
   .navbar {
     overflow: hidden; /* Don't allow scrolling */
     display: block; /* Occupies its own horizontal space */
-    background-color: #13294E;
+    background-color: darkgrey;
     position: fixed; /* Doesn't move */
     top: 0;
     width: 100%; /* 100% of width of screen */
@@ -51,7 +51,7 @@
     z-index: 150; /* Force the menu to be at front */
     top: 48px; /* Position menu 48 px from top of screen; accomodates top navbar */
     left: 0; /* Position the menu on the left hand side */
-    background-color: #13294E; /* Background color is dark blue */
+    background-color: darkgrey; /* Background color is dark blue */
     overflow-x: hidden; /* Don't allow horizontal scroll */
     transition: 0.5s; /* Animation transition time is 0.5 sec */
     padding-top: 2px; /* Place menu content 2 px from top */
@@ -71,19 +71,19 @@
   /* Required ordering of link style definitions: visited, hover, active. If out of this order, they won't work!! */
   
   .sidemenu a:visited {
-  background-color:  #13294E !important;
+  background-color:  darkgrey !important;
   color: white !important;
   }
   
   .sidemenu a:active {
-  background-color:  #13294E !important;
+  background-color:  darkgrey !important;
   color: white !important;
   }
   
   .sidemenu a:hover {
     cursor: default;
     text-decoration: none;
-    color: #13294E !important;
+    color: darkgrey !important;
     background-color: #F0F0F0;
   }
   
@@ -114,7 +114,7 @@
   /* side menu item styling */
   .sidemenu-btn {
   background-color: transparent;
-  border-color: #13294E;
+  border-color: darkgrey;
   text-align: center;
   }
   
@@ -130,20 +130,20 @@
          pointer-events: none;
          cursor: default;
          text-decoration: none;
-         color: #13294E !important;
+         color: darkgrey !important;
          background-color: #F0F0F0;
   }
   
   /* The SpeedScore dark blue color theme  */       
   .btn-color-theme {
-        background-color: #13294E;
+        background-color: darkgrey;
         color: white;
     }
     
   /* The color theme when a bottom bar menu item is selected */
   .btn-alt-color-theme {
         background-color: #F0F0F0;
-        color: #13294E;
+        color: darkgrey;
     }
   
   /* change items to gray when disabled class is applied  */
@@ -153,8 +153,8 @@
     
   .btn-color-theme-outline {
         border: 2px;
-        border-color: #13294E;
-        color: #13294E;
+        border-color: darkgrey;
+        color: darkgrey;
   }
   
   /* Styling for the divs in the app. Ensures that the content at top isn't obscured by top bar */
@@ -173,7 +173,7 @@
   
   /* Styling for mode bar at the bottom of the page */
   .modebar {
-    background-color: #13294E;
+    background-color: darkgrey;
     overflow: hidden;
     position: fixed;
     bottom: 0;
@@ -185,7 +185,7 @@
   .modebar a {
     display: block;
     float: left;
-    width: 32%;
+    width: 50%;
     color: white;
     text-align: center;
     padding: 2px 2px;
@@ -196,7 +196,7 @@
   /* Add a gray background color to the button when it is selected */
   .modebar a:active {
     background-color: #F0F0F0;
-    color: #13294E;
+    color: darkgrey;
   }
   
   /* mode bar button styling when item is selected */
@@ -204,7 +204,7 @@
     pointer-events: none;
     cursor: default;
     text-decoration: none;
-    color: #13294E !important;
+    color: darkgrey !important;
     background-color: #F0F0F0;
   }
   
@@ -237,7 +237,7 @@
     height:60px;
     bottom:60px;
     right:40px;
-    background-color:#13294E;
+    background-color:darkgrey;
     color:white;
     border-radius:50px;
     text-align:center;
@@ -298,7 +298,7 @@
   }
   
   .login-link {
-    color:  #13294E;
+    color:  lightgrey;
   }
   
   /* Form styling */
@@ -306,5 +306,3 @@
   .form-center {
     text-align: center;
   }
-  
-  

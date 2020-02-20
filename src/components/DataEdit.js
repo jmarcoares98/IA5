@@ -5,7 +5,7 @@ class DataEdit extends React.Component {
        render() {
         return (
         <div className="padded-page center">
-            <h1>mode 2</h1>
+            <h1>edit data</h1>
             <h2>this page is under construction.</h2>
             <img src="./public/delta.png" 
              height="200" width="200"/>

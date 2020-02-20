@@ -1,4 +1,5 @@
 import React from 'react';
+import Delta from './../delta.png'
 
 class ConstructionPage extends React.Component {
 
@@ -7,7 +8,7 @@ class ConstructionPage extends React.Component {
         <div className="padded-page center">
             <h1>mode 2</h1>
             <h2>this page is under construction.</h2>
-            <img src="./public/delta.png" 
+            <img src={Delta} 
              height="200" width="200"/>
             <p style={{fontStyle: "italic"}}>
             version cpts 489 IA5<br/>

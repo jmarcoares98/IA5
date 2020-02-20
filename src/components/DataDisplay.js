@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/modal.css';
-import AppMode from '../AppMode.js';
+import AppMode from './../AppMode.js';
 
 class DataDisplay extends React.Component {
 
@@ -69,20 +69,13 @@ class DataDisplay extends React.Component {
   //by the current user and providing buttons to view/edit and delete each round.
   renderTable = () => {
     let table = [];
-    for (const r in this.props.rounds) {
+    for (const r in this.props.name) {
       table.push(
         <tr key={r}>
-          <td>{this.props.rounds[r].date}</td>
-          <td>{this.props.rounds[r].course}</td>
-          <td>{(Number(this.props.rounds[r].strokes) + 
-                Number(this.props.rounds[r].minutes)) +
-                ":" + this.props.rounds[r].seconds + " (" + 
-                this.props.rounds[r].strokes + 
-                " in " + this.props.rounds[r].minutes + ":" + 
-                this.props.rounds[r].seconds + ")"}
-          </td>
+          <td>{this.props.name[r].name}</td>
+          <td>{this.props.name[r].birthday}</td>
           <td><button onClick={this.props.menuOpen ? null : () => this.editData(r)}>
-                <span className="fa fa-eye"></span></button></td>
+                <span className="fa fa-edit"></span></button></td>
           <td><button onClick={this.props.menuOpen ? null : () => this.confirmDelete(r)}>
                 <span className="fa fa-trash"></span></button></td>
         </tr> 
@@ -107,7 +100,7 @@ class DataDisplay extends React.Component {
         </tr>
         </thead>
         <tbody>
-          {Object.keys(this.props.rounds).length === 0 ? 
+          {Object.keys(this.props.name).length === 0 ? 
           <tr>
           <td colSpan="4" style={{fontStyle: "italic"}}>no data logged</td>
           </tr> : this.renderTable()

@@ -1,5 +1,5 @@
-import React from 'react';
-import AppMode from '../AppMode.js';
+  import React from 'react';
+import AppMode from './../AppMode.js';
 
 class SideMenu extends React.Component {
 
@@ -11,10 +11,8 @@ class SideMenu extends React.Component {
       case AppMode.DATA:
         return(
           <div>
-          <a className="sidemenu-item">
+          <a className="sidemenu-item" onClick={() => this.props.changeMode(AppMode.DATA_ADD)}>
               <span className="fa fa-plus"></span>&nbsp;add data</a>
-          <a className="menuItem">
-              <span className="fa fa-edit"></span>&nbsp;edit data</a>
           </div>
         );
       break;

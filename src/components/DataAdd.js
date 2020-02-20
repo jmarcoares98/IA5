@@ -1,5 +1,5 @@
 import React from 'react';
-import AppMode from '../AppMode.js';
+import AppMode from './../AppMode.js';
 
 //Add Data -- this component presents a controlled form through which the user
 //can enter a new data or edit an existing data.
@@ -21,6 +21,11 @@ class DataAdd extends React.Component {
         this.state.btnLabel = "update data";
       }
     }
+
+    handleChange = (event) => {
+        const name = event.target.name;
+        this.setState({[name]: event.target.value});
+      }
   
     //handleSubmit
     handleSubmit = (event) => {
@@ -48,7 +53,7 @@ class DataAdd extends React.Component {
               name:
               <input name="name" className="form-control form-center" type="text"
                 value={this.state.name} onChange={this.handleChange}
-                placeholder="Course played" size="50" maxLength="50" />
+                placeholder="full name" size="50" maxLength="50" />
             </label>
             <p></p>
             <label>

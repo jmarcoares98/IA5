@@ -44,7 +44,7 @@ handleLogin = () => {
     //Set current user
     this.props.setUserId(this.emailInputRef.current.value);
     //Trigger switch to FEED mode (default app landing page)
-    this.props.changeMode(AppMode.FEED);
+    this.props.changeMode(AppMode.DATA);
 }
 
 //handleLoginSubmit -- Called when user clicks on login button. Initiate spinner
@@ -104,15 +104,15 @@ handleCreateAccount = (event) => {
         securityQuestion: this.state.accountSecurityQuestion,
         securityAnswer: this.state.accountSecurityAnswer
         },
-        rounds: {}, 
-        roundCount: 0
+        name: {}, 
+        nameCount: 0
     };
     //Commit to localStorage:
     localStorage.setItem("userData",JSON.stringify(data));
     //Set current user
     this.props.setUserId(this.state.accountName);
     //Log in user by switching to FEED mode
-    this.props.changeMode(AppMode.FEED);
+    this.props.changeMode(AppMode.DATA);
 }
 
 //handleLoginChange -- Check the validity of the username (email address)
@@ -379,7 +379,7 @@ handleResetPassword = (event) => {
         data[this.state.resetEmail].accountInfo.password = this.resetPasswordRef.current.value;
         localStorage.setItem("userData",JSON.stringify(data));
         this.props.setUserId(this.state.resetEmail);
-        this.props.changeMode(AppMode.FEED);
+        this.props.changeMode(AppMode.DATA);
         this.setState({resetEmail: "", 
                        resetQuestion: "",
                        resetAnswer: "",
