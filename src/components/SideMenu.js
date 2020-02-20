@@ -12,9 +12,9 @@ class SideMenu extends React.Component {
         return(
           <div>
           <a className="sidemenu-item">
-              <span className="fa fa-users"></span>&nbsp;add data</a>
+              <span className="fa fa-plus"></span>&nbsp;add data</a>
           <a className="menuItem">
-              <span className="fa fa-search"></span>&nbsp;edit data</a>
+              <span className="fa fa-edit"></span>&nbsp;edit data</a>
           </div>
         );
       break;
@@ -22,9 +22,9 @@ class SideMenu extends React.Component {
         return(
           <div>
             <a className="sidemenu-item">
-              <span className="fa fa-plus"></span>&nbsp;still fixing</a>
+              <span className="fa fa-wrench"></span>&nbsp;still fixing</a>
             <a className="menuItem">
-              <span className="fa fa-search"></span>&nbsp;still fixing</a>
+              <span className="fa fa-wrench"></span>&nbsp;still fixing</a>
           </div>
         );
       default:
