@@ -19,14 +19,14 @@ class ModeBar extends React.Component {
           <a className={"modebar-btn" + 
             (this.props.mode === AppMode.DISPLAY ? " modebar-item-selected" : "")} 
             onClick={this.props.menuOpen ? null : 
-              () => this.handleModeBtnClick(AppMode.FEED)}>
+              () => this.handleModeBtnClick(AppMode.DATA)}>
             <span className="modebar-icon nonMenuItem fa fa-th-list"></span>
             <span className="modebar-text">display</span>
           </a>
           <a className={"modebar-btn" +
             (this.props.mode === AppMode.CONSTRUCTION ? " modebar-item-selected" : "")} 
             onClick={this.props.menuOpen ? null : 
-              () => this.handleModeBtnClick(AppMode.ROUNDS)}>
+              () => this.handleModeBtnClick(AppMode.CONSTRUCTION)}>
             <span className="modebar-icon fa fa-wrench"></span>
             <span className="modebar-text">under construction</span>
           </a>

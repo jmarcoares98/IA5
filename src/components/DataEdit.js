@@ -1,6 +1,6 @@
 import React from 'react';
 
-class EditPage extends React.Component {
+class DataEdit extends React.Component {
 
        render() {
         return (
@@ -17,4 +17,4 @@ class EditPage extends React.Component {
     }   
 }
 
-export default EditPage;
+export default DataEdit;

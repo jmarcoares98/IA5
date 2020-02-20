@@ -8,7 +8,7 @@ class SideMenu extends React.Component {
   //determine mode.
   renderModeMenuItems = () => {
     switch (this.props.mode) {
-      case AppMode.DISPLAY:
+      case AppMode.DATA:
         return(
           <div>
           <a className="sidemenu-item">
