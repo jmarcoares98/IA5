@@ -9,7 +9,7 @@ import ConstructionPage from './ConstructionPage.js'
 
 const modeTitle = {};
 modeTitle[AppMode.LOGIN] = "welcome to IA5: login";
-modeTitle[AppMode.DATA] = "display data";
+modeTitle[AppMode.DATA] = "my data";
 modeTitle[AppMode.DATA_ADD] = "add data";
 modeTitle[AppMode.DATA_EDIT] = "edit data";
 modeTitle[AppMode.CONSTRUCTION] = "under construction";

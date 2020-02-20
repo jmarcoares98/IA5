@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/modal.css';
 import AppMode from '../AppMode.js';
 
-class RoundsTable extends React.Component {
+class DataDisplay extends React.Component {
 
 
   constructor(props) {
@@ -120,4 +120,4 @@ class RoundsTable extends React.Component {
   }
 }
 
-export default RoundsTable;
+export default DataDisplay;
