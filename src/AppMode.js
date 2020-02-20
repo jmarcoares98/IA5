@@ -7,9 +7,9 @@ but it will do for our purposes*/
 
 const AppMode = {
     LOGIN: "LoginMode",
-    DISPLAY: "DisplayMode",
-    DISPLAY_ADDDATA: "DisplayMode-AddData",
-    DISPLAY_EDITDATA: "DisplayMode-EditData",
+    DATA: "DataMode",
+    DATA_ADD: "DataMode-Add",
+    DATA_EDIT: "DataMode-Edit",
     CONSTRUCTION: "ConstructionMode",
 };
 

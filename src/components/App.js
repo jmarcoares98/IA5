@@ -4,20 +4,21 @@ import SideMenu from './SideMenu.js';
 import ModeBar from './ModeBar.js';
 import AppMode from './../AppMode.js';
 import LoginPage from './LoginPage.js';
-import DisplayPage from './DisplayPage.js';
+import DataPage from './DataPage.js';
 import ConstructionPage from './ConstructionPage.js'
 
 const modeTitle = {};
 modeTitle[AppMode.LOGIN] = "welcome to IA5: login";
-modeTitle[AppMode.DISPLAY] = "display data";
-modeTitle[AppMode.DISPLAY_ADDDATA] = "add data";
+modeTitle[AppMode.DATA] = "display data";
+modeTitle[AppMode.DATA_ADD] = "add data";
+modeTitle[AppMode.DATA_EDIT] = "edit data";
 modeTitle[AppMode.CONSTRUCTION] = "under construction";
 
 const modeToPage = {};
 modeToPage[AppMode.LOGIN] = LoginPage;
-modeToPage[AppMode.DISPLAY] = DisplayPage;
-modeToPage[AppMode.DISPLAY_ADDDATA] = DisplayPage;
-modeToPage[AppMode.DISPLAY_EDITDATA] = DisplayPage;
+modeToPage[AppMode.DATA] = DataPage;
+modeToPage[AppMode.DATA_ADD] = DataPage;
+modeToPage[AppMode.DATA_EDIT] = DataPage;
 modeToPage[AppMode.CONSTRUCTION] = ConstructionPage;
 
 class App extends React.Component{
@@ -78,7 +79,7 @@ class App extends React.Component{
                 </div>
                 <div className="modal-body">
                   <img
-                  src="https://dl.dropboxusercontent.com/s/awuwr1vpuw1lkyl/SpeedScore4SplashLogo.png"
+                  src="./public/delta.png"
                   height="200" width="200"/>
                   <h3>this is IA5 by marco ares</h3>
                   <p>version cpts489 spring 2020<br/>
