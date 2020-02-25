@@ -9,7 +9,7 @@ import ConstructionPage from './ConstructionPage.js'
 import Delta from './../delta.png'
 
 const modeTitle = {};
-modeTitle[AppMode.LOGIN] = "welcome to IA5: login";
+modeTitle[AppMode.LOGIN] = "welcome to IA6: login";
 modeTitle[AppMode.DATA] = "my data";
 modeTitle[AppMode.DATA_ADD] = "add data";
 modeTitle[AppMode.DATA_EDIT] = "edit data";
@@ -82,13 +82,13 @@ class App extends React.Component{
                   <img
                   src={Delta}
                   height="200" width="200"/>
-                  <h3>this is IA5 by marco ares</h3>
+                  <h3>this is IA6 by marco ares</h3>
                   <p>version cpts489 spring 2020<br/>
                   &copy; 2020 student at washington state university. all rights
                   reserved.
                   </p>
                   <div style={{textAlign: "left"}}>
-                    <p>IA5 apps support</p>
+                    <p>IA6 apps support</p>
                     <p>this assignment is made by react that we learned in class
                         in the past week and a half. mostly the code that i have 
                         here is helped by going to class and looking at his code.
