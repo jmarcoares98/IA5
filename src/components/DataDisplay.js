@@ -13,6 +13,7 @@ class DataDisplay extends React.Component {
   }
 
   //editData
+  //For IA6
   editData = (id) => {
     this.props.setEditId(id);
     this.props.changeMode(AppMode.DATA_EDIT);

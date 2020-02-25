@@ -16,6 +16,7 @@ class DataAdd extends React.Component {
                       btnLabel: "save data"}
       } else {
         //if editing an existing data, the starting state is the current data
+        //Already added from IA5 but this is for IA6
         this.state = this.props.startData;
         this.state.faIcon = "fa fa-edit";
         this.state.btnLabel = "update data";

@@ -28,6 +28,7 @@ class DataPage extends React.Component {
         this.setState({editId: val});
     }
  
+    //This is where the local storage for editing data is
     editData = (newData) => {
         let data = JSON.parse(localStorage.getItem("userData")); 
         let newName = this.state.name;
